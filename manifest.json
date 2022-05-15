@@ -7,7 +7,7 @@
     "description": "Does nothing.",
 
     "browser_action": {
-      "default_icon": "Logo-temp.svg",
+      "default_icon": "./Icons/logo.png",
       "default_title": "Fanservice",
       "default_popup": "popup/popup.html"
     },

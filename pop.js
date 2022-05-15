@@ -1,21 +1,13 @@
-const hide = `body > :not(.pop-image) {
-    display: none;
-}`;
+        
+var x = setInterval(function () {
 
-function listenforclicks(){
-  document.addEventListener('click', function(e){
-    if(e.target.classList.contains('pop-image')){
-      document.body.style.cssText = hide;
-    }
-    function(click){
-        switch(click){
-            case 'pop':
-                return browser.runtime.sendMessage("POP");
-            case 'pull':
-                return browser.runtime.sendMessage("PULL");
-            case 'push':
-                return browser.runtime.sendMessage("PUSH");
-        }
-    }
+            
+  var now = new Date();
+  let time = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();   
+            
+  document.getElementById("demo").innerHTML = time;       
+  if (distance < 0) {
+    clearInterval(x);
+    ocument.getElementById("demo").innerHTML = "EXPIRED";
   }
-}
+}, 1000);
