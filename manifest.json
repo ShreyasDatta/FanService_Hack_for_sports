@@ -1,0 +1,26 @@
+{
+
+    "manifest_version": 2,
+    "name": "testExtension",
+    "version": "1.0",
+  
+    "description": "Does nothing.",
+
+    "browser_action": {
+      "default_icon": "Logo-temp.svg",
+      "default_title": "Fanservice",
+      "default_popup": "popup/popup.html"
+    },
+    
+  
+  
+    "content_scripts": [
+      {
+        "matches": ["http://*/*"],
+        "permissions": ["http://*localhost/*"],
+        "js": ["app.js"]
+      }
+    ]
+  
+  }
+  
