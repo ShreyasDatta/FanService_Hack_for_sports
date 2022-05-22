@@ -1,16 +1,19 @@
 const express = require('express');
 
-const app = express()
-const ejs = require('ejs');
-const fs = require("fs");
-
-app.set('view engine', 'ejs');
+const app = express();
 
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/Site.html");
 })
 
+app.get('/video',(req,res)=>{
+    res.sendFile(__dirname + "/video/video.mp4");
+})
+
+app.get('/Redeem',(req,res)=>{
+    res.sendFile(__dirname + "/Redeem.html");
+})
 
 app.post('/', (req, res) => {
     res.send('Test Website')

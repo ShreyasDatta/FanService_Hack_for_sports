@@ -17,8 +17,8 @@
     "content_scripts": [
       {
         "matches": ["http://*/*"],
-        "permissions": ["http://*localhost/*"],
-        "js": ["app.js"]
+        "permissions": ["http://*localhost/*"]
+          
       }
     ]
   
